@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    {% if username != ""%}
+    <p>username logado: {{username}}</p>
+    <p><a href="/logout">Logout</a></p>
+    {% else %}
+    <p>você não está logado!</p>
+    <p>clique no link para tela de login <a href="/login">login</a></p>
+    {% endif %}
+    
+</body>
+</html>
